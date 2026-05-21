@@ -1,0 +1,32 @@
+{
+  "video_id": 50,
+  "filename": "sample-video.mp4",
+  "video_summary": {
+    "duration_seconds": 58.0,
+    "total_segments": 6,
+    "speech_duration_seconds": 42.5,
+    "average_highlight_score": 0.72,
+    "highlight_potential": "Strong"
+  },
+  "segments": [
+    {
+      "segment_id": 101,
+      "segment_index": 0,
+      "start_time": 0.0,
+      "end_time": 10.0,
+      "duration_seconds": 10.0,
+      "transcript": "Sample transcript text.",
+      "review_status": "favorite",
+      "review_notes": "Strong opening moment.",
+      "review_tags": [
+        "hook",
+        "interview"
+      ],
+      "speech_score": 0.83,
+      "brightness_score": 0.71,
+      "blur_score": 0.12,
+      "shake_score": 0.18,
+      "final_highlight_score": 0.91
+    }
+  ]
+}
