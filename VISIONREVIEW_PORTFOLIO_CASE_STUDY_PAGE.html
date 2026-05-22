@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VisionReview AI — Portfolio Case Study</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #0b111a; color: #e5edf7; line-height: 1.6; }
+    .page { max-width: 980px; margin: 0 auto; padding: 48px 22px; }
+    .hero { padding: 36px; border: 1px solid rgba(143,185,255,0.22); background: radial-gradient(circle at top left, rgba(64,156,255,0.18), rgba(255,255,255,0.035)); border-radius: 24px; margin-bottom: 34px; }
+    .eyebrow { color: #8fb9ff; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.78rem; font-weight: 700; }
+    h1 { font-size: clamp(2.3rem, 6vw, 4.2rem); line-height: 1.05; margin: 12px 0 18px; }
+    h2 { margin-top: 44px; color: #fff; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 10px; }
+    p, li { color: #b8c4d6; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 24px 0; }
+    .card { background: rgba(255,255,255,0.045); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; padding: 18px; }
+    .card strong { display: block; color: #fff; margin-bottom: 8px; }
+    pre { background: rgba(255,255,255,0.08); color: #e7f0ff; border-radius: 10px; padding: 16px; overflow-x: auto; }
+    a { color: #8fb9ff; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .tag { padding: 6px 10px; border-radius: 999px; background: rgba(64,156,255,0.13); color: #cfe3ff; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Portfolio Case Study</div>
+      <h1>VisionReview AI</h1>
+      <p>An AI-assisted video review and editorial workflow application for moving from raw footage to reviewed selects, reel drafts, QC notes, and export-ready handoff packages.</p>
+      <div class="tag-row">
+        <span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">OpenCV</span><span class="tag">FFmpeg</span><span class="tag">Whisper</span><span class="tag">SQLite</span>
+      </div>
+    </section>
+    <section>
+      <h2>Project Snapshot</h2>
+      <div class="grid">
+        <div class="card"><strong>Project Type</strong>Full-stack AI/video workflow application</div>
+        <div class="card"><strong>Status</strong>Local Beta v1.0</div>
+        <div class="card"><strong>Role</strong>Full-stack developer and AI workflow designer</div>
+        <div class="card"><strong>Focus</strong>Applied AI, video analysis, editorial workflow</div>
+      </div>
+    </section>
+    <section><h2>The Problem</h2><p>Editors and creators spend significant time scrubbing footage, finding strong moments, organizing selects, writing notes, preparing client summaries, and exporting handoff materials across disconnected tools.</p></section>
+    <section><h2>The Solution</h2><p>VisionReview AI brings the process into one guided workflow:</p><pre>Upload → Analyze → Review → Build Reel → QC → Approve → Export</pre></section>
+    <section><h2>Key Features</h2><div class="grid"><div class="card"><strong>Dashboard</strong>Upload, reopen, search, filter, sort, and manage local projects.</div><div class="card"><strong>Review Workflow</strong>Mark clips as Favorite, Keep, Reject, or Unreviewed with notes and tags.</div><div class="card"><strong>Reel Builder</strong>Plan, order, preset, client review, timeline, copy, handoff, compare, and QC tools.</div><div class="card"><strong>Exports</strong>Clip, reel, JSON, CSV, TXT, and Project Package ZIP exports.</div></div></section>
+    <section><h2>Technical Architecture</h2><pre>React + Vite Frontend
+        ↓
+FastAPI Backend
+        ↓
+SQLite / SQLAlchemy
+        ↓
+OpenCV + FFmpeg + Whisper
+        ↓
+Reports, Review Data, Clips, Reels, Project Packages</pre></section>
+    <section><h2>Outcome</h2><p>VisionReview AI reached Local Beta v1.0 with a working private source repository and public showcase repository.</p><p>Public showcase: <a href="https://github.com/ReeseMoe73/visionreview-ai-showcase">https://github.com/ReeseMoe73/visionreview-ai-showcase</a></p></section>
+  </main>
+</body>
+</html>
