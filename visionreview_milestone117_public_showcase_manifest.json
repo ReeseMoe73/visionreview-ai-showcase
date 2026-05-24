@@ -1,0 +1,16 @@
+{
+  "project": "VisionReview AI",
+  "milestone": "117",
+  "title": "Public Showcase Update",
+  "generated_at": "2026-05-24T07:55:59",
+  "repo_target": "visionreview-ai-showcase",
+  "safe_for_public_repo": true,
+  "files": [
+    "README.md",
+    "docs/portfolio/portfolio-case-study.md",
+    "docs/portfolio/public-summary.md",
+    "docs/portfolio/linkedin-post-draft.md",
+    "docs/architecture/architecture-overview.md"
+  ],
+  "positioning": "AI-assisted editorial review and client handoff workflow"
+}

@@ -1,285 +1,238 @@
 # VisionReview AI — Public Showcase
 
-## AI-Assisted Video Review and Editorial Workflow
+## AI-Assisted Editorial Review and Client Handoff Workflow
 
-VisionReview AI is an AI-assisted video review and editorial workflow system designed to help editors, creators, and production teams move from raw footage to reviewed selects, structured reel drafts, quality-control notes, and export-ready handoff packages.
+VisionReview AI is a local beta full-stack application for AI-assisted video review, editorial decision-making, quality control, and client handoff package generation.
 
-This public repository is a **showcase version** of the project. The full working source code is kept private while the project is evaluated for commercial development.
+The project was built to explore how AI, computer vision, transcription, and human editorial review can work together to help creators, editors, and production teams move from raw footage to organized selects and client-ready deliverables.
 
 ---
 
-## Project Status
+## Product Positioning
 
 ```text
-Status: Local Beta v1.0
-Full Source: Private
-Public Repo Type: Showcase / Portfolio
+From raw footage to client-ready review packages.
 ```
 
----
+VisionReview AI is not positioned as a simple viral clip generator. It is an AI-assisted review-to-handoff workflow system.
 
-## Product Preview
+The app helps users:
 
-### Dashboard
-
-The dashboard provides upload access, recent project management, search, filtering, sorting, and local beta readiness information.
-
-![VisionReview AI Dashboard](docs/screenshots/dashboard.png)
-
----
-
-### Report Overview
-
-The report view combines video playback, segment analysis, transcript excerpts, review controls, and export tools in one editorial workspace.
-
-![VisionReview AI Report Overview](docs/screenshots/report-overview.png)
+- Analyze uploaded video
+- Break footage into reviewable segments
+- Score segment quality and highlight potential
+- Review clips manually
+- Add notes and editorial tags
+- Build draft reel structures
+- Run export quality control
+- Generate client review HTML
+- Generate client package ZIP files
+- Save client/project metadata
+- Copy send-ready handoff summaries
 
 ---
 
-### Segment Review
+## Why This Project Matters
 
-Editors can mark clips as Favorite, Keep, Reject, or Unreviewed, then add notes and tags for downstream reel building.
+Many AI video tools focus on instantly generating clips.
 
-![VisionReview AI Segment Review](docs/screenshots/segment-review.png)
+VisionReview AI focuses on the professional workflow around video review:
 
----
+```text
+Analyze → Review → Tag → Organize → QC → Package → Handoff
+```
 
-### Review Mode
-
-Review Mode creates a focused workflow for moving through segments quickly with a sticky action bar, quick decisions, quick tags, and quick notes.
-
-![VisionReview AI Review Mode](docs/screenshots/review-mode.png)
+This is designed for editors and production teams that need more than a quick clipping tool. The goal is to support better editorial decisions and cleaner client communication.
 
 ---
 
-### Reel Builder — Plan
+## Current Version
 
-The Plan tab recommends a draft, summarizes readiness, and gives a clear next-step workflow.
+```text
+Local Beta v1.1.2
+```
 
-![VisionReview AI Reel Builder Plan](docs/screenshots/reel-builder-plan.png)
+This version includes:
 
----
-
-### Reel Builder — Order
-
-The Order tab lets an editor manually arrange clips before export.
-
-![VisionReview AI Reel Builder Order](docs/screenshots/reel-builder-order.png)
-
----
-
-### Reel Builder — Presets
-
-The Presets tab provides platform and delivery guidance for Instagram, TikTok, YouTube Shorts, client review, and editor handoff.
-
-![VisionReview AI Reel Builder Presets](docs/screenshots/reel-builder-presets.png)
-
----
-
-### Client Review
-
-The Client tab creates a cleaner client-facing review summary from Favorite and Keep clips.
-
-![VisionReview AI Client Review](docs/screenshots/client-review.png)
-
----
-
-### QC and Approval
-
-The QC tab checks export readiness, warnings, draft approval, and approval notes.
-
-![VisionReview AI QC Approval](docs/screenshots/qc-approval.png)
-
----
-
-### Project Package Export
-
-VisionReview AI can export a structured project package containing report data, review CSV, transcript, summary, and media inventory.
-
-![VisionReview AI Project Package Export](docs/screenshots/project-package-export.png)
-
----
-
-## Problem Statement
-
-Video editors, content creators, and production teams often spend significant time:
-
-- Scrubbing raw footage
-- Finding usable moments
-- Taking review notes
-- Organizing selects
-- Creating short-form reel drafts
-- Preparing client review summaries
-- Exporting production handoff documents
-
-VisionReview AI explores how AI-assisted media analysis can support that workflow by combining video processing, transcription, highlight scoring, human review, reel planning, and export packaging into one local application.
+- Database-backed client/project metadata
+- Manual metadata save workflow
+- Last saved timestamp
+- Client review HTML export
+- Client package ZIP export
+- Review tags and notes
+- Reel Builder workflow
+- Export Quality Control
+- Send-ready client handoff summary
+- Layout polish and regression fixes
 
 ---
 
 ## Core Workflow
 
 ```text
-Upload → Analyze → Review → Build Reel → QC → Approve → Export
+Upload footage
+↓
+Generate report
+↓
+Review video segments
+↓
+Add status, notes, and tags
+↓
+Build reel candidates
+↓
+Run QC checks
+↓
+Enter client/project metadata
+↓
+Generate client review HTML
+↓
+Download client package ZIP
+↓
+Send or archive handoff package
 ```
 
 ---
 
 ## Feature Overview
 
-VisionReview AI includes:
+### Video Analysis
 
-- MP4 upload
-- Video analysis and segmentation
-- Transcript generation
+VisionReview AI processes video into structured segments and extracts useful review information such as:
+
+- Duration
+- Segment timestamps
+- Transcript excerpts
 - Highlight scoring
-- Human review decisions
-- Notes and tags
-- Review Mode
-- Reel Builder
-- Client Review View
-- QC and approval workflow
-- Project Package export
-- Recent Videos dashboard
+- Visual quality indicators
+- Speech scoring
+
+### Review Workflow
+
+Users can mark segments as:
+
+- Favorite
+- Keep
+- Reject
+- Unreviewed
+
+Users can also add notes and tags to explain why a segment matters.
+
+### Tagging System
+
+Tags help turn raw segments into editorial building blocks.
+
+Example tags include:
+
+- Hook
+- B-roll
+- Interview
+- Cutaway
+- CTA
+- Strong Speech
+- Client Ready
+- Needs Review
+
+### Reel Builder
+
+The Reel Builder helps organize selected clips into draft structures and review possible reel candidates.
+
+### Export Quality Control
+
+The QC workflow helps flag export readiness issues such as:
+
+- Too few clips
+- Runtime concerns
+- Missing opening hook
+- Missing ending / CTA
+- Quality warnings
+
+### Client Handoff
+
+The Client tab allows users to prepare polished delivery context, including:
+
+- Project name
+- Client name
+- Prepared by
+- Delivery brand
+- Review purpose
+- Target review date
+- Project notes
+
+These details can be saved and included in client-facing deliverables.
 
 ---
 
-## Reel Builder
+## Client Deliverables
 
-The Reel Builder includes:
+VisionReview AI can generate:
 
-```text
-Plan | Order | Presets | Client | Timeline | Copy | Handoff | Compare | QC
-```
-
-These tools support:
-
-- Draft planning
-- Clip ordering
-- Delivery presets
-- Client review summaries
-- Editor timeline notes
-- Posting copy
-- Handoff briefs
-- Candidate comparison
-- QC and approval checks
+- Client review HTML
+- Client review summary
+- Selected clips CSV
+- Quality check summary
+- Client next steps
+- Project metadata file
+- Full structured report JSON
+- ZIP handoff package
 
 ---
 
 ## Technology Stack
 
-### Backend
-
-- FastAPI
-- SQLite
-- SQLAlchemy
-- OpenCV
-- FFmpeg
-- Whisper transcription
-
-### Frontend
-
-- React
-- Vite
-- CSS
-- jsPDF
-
----
-
-## Architecture Overview
-
-High-level architecture:
-
 ```text
-React + Vite Frontend
-        ↓
-FastAPI Backend
-        ↓
-SQLite / SQLAlchemy
-        ↓
-OpenCV + FFmpeg + Whisper
-        ↓
-Reports, Review Data, Clips, Reels, Project Packages
-```
-
-See:
-
-```text
-docs/architecture-overview.md
+Backend: FastAPI
+Database: SQLite + SQLAlchemy
+Frontend: React + Vite
+Video processing: OpenCV
+Transcription: Whisper
+Media utilities: FFmpeg
 ```
 
 ---
 
-## Sample Workflow
-
-1. Upload an MP4 file.
-2. Let the backend analyze and segment the video.
-3. Review generated segments.
-4. Mark strong clips as Favorite or Keep.
-5. Add notes and tags.
-6. Use Reel Builder to create a draft.
-7. Check the draft in QC.
-8. Approve the draft.
-9. Export a reel or project package.
-
----
-
-## Public Showcase Note
-
-This repository does **not** include the full working backend or frontend source code.
-
-The full implementation is kept private to protect:
-
-- Product implementation
-- Backend architecture
-- UI workflow
-- Highlight scoring logic
-- Reel Builder workflow
-- QC and approval logic
-- Export pipeline
-- Commercial roadmap
-
----
-
-## Demo Video
+## Development Status
 
 ```text
-Coming soon
+Status: Working local beta
+Version: Local Beta v1.1.2
+Repository type: Public showcase only
+Private source code: Not included
 ```
 
-Recommended demo title:
-
-```text
-VisionReview AI Local Beta v1.0 — AI-Assisted Video Review Workflow
-```
+This repository is intended as a portfolio and product showcase. It does not include private implementation files, source code, database files, uploaded videos, generated media, API keys, or credentials.
 
 ---
 
-## Roadmap
+## Competitive Position
 
-Potential future directions include:
-
-- Desktop app packaging
-- Cloud storage
-- Hosted database
-- Authenticated user workspaces
-- Background video processing
-- Client review portal
-- Export presets
-- Billing and usage limits
-- SaaS deployment
-
-See:
+VisionReview AI is best understood as an:
 
 ```text
-docs/roadmap.md
+AI-assisted editorial review and client handoff workflow system
 ```
+
+It is adjacent to AI clipping tools, but the stronger differentiation is review, organization, QC, and handoff.
+
+The product is designed to support the human editor instead of replacing the editorial decision process.
 
 ---
 
-## Repository Notice
+## Suggested Demo Narrative
 
-Copyright © 2026 M Henning. All rights reserved.
+A strong demo should show:
 
-This repository is provided for portfolio and demonstration purposes only. No permission is granted to copy, modify, distribute, sublicense, or use this project commercially.
+1. Uploading or opening a video report
+2. Reviewing segments
+3. Applying review status and tags
+4. Building a reel candidate
+5. Running QC
+6. Entering client metadata
+7. Opening client review HTML
+8. Downloading the client package ZIP
+9. Copying the send-ready handoff message
 
-The full working source code is not included in this public showcase repository.
+---
+
+## Note
+
+This is a public showcase repository. The private development repository contains the implementation code and local development history.
