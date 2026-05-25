@@ -7,6 +7,28 @@ VisionReview AI is a local beta full-stack application for AI-assisted video rev
 The project was built to explore how AI, computer vision, transcription, and human editorial review can work together to help creators, editors, and production teams move from raw footage to organized selects and client-ready deliverables.
 
 ---
+## Demo Video
+
+Watch the VisionReview AI local beta demo:
+
+https://drive.google.com/file/d/1FSOujpqpnOwJ49ciRKDRFNj_mfgv3YgT/view?usp=sharing
+
+This demo shows VisionReview AI as an AI-assisted editorial review and client handoff workflow.
+
+The walkthrough includes:
+
+- Video report review
+- Segment-level analysis
+- Review Mode
+- Tags and notes
+- Reel Builder
+- Compare workflow
+- Export Quality Control
+- Client/project metadata
+- Client review HTML
+- Client package ZIP
+- Send-ready handoff summary
+
 
 ## Product Positioning
 
